@@ -2,16 +2,28 @@
 
 **Image Tampering Detection using ELA and CNN**
 
-## Project objective
-Combine the implementation of error-level analysis (ELA) and deep learning to detect whether an image has undergone fabrication or/and editing process or not, e.g. splicing.
+## Project Objective
+The objective of this project is to combine the implementation of Error-Level Analysis (ELA) and Deep Learning to detect whether an image has undergone fabrication or editing, such as splicing. This tool helps to distinguish real images from tampered or manipulated ones using advanced image analysis techniques and Convolutional Neural Networks (CNN).
 
 ## Methods
-1. Error-level analysis
-2. Convolutional neural networks (CNN)
+Error-Level Analysis (ELA): Used to identify regions in an image with varying compression levels, indicating potential tampering.
+Convolutional Neural Networks (CNN): Applied for image classification after processing the ELA-transformed images.
 
-## Architecture
-![full-architecture](docs/model-architecture.jpg)
+## Implementation Details
 
-## Result
-- Convergence: Epoch 9
-- Best accuracy: 91.83% (epoch 9)
+**Tech Stack:**
+    TensorFlow,
+    Keras,
+    Numpy,
+    OpenCV.
+    
+**Data Augmentation:** Used to artificially expand the dataset and improve model generalization.
+
+## Pre-trained Models Used:
+
+ResNet50,
+VGG16,
+VGG19.
+
+## Results
+Best Accuracy: Achieved a top accuracy of 91.83% during training .
